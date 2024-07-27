@@ -42,7 +42,7 @@ Este proyecto fue desarrollado durante la hackatón que se llevó a cabo en Mind
 
 ## Contributing Members
 
-|Name     |  Slack Handle   | 
+|Name     |  Rol            | 
 |---------|-----------------|
 |[Lucas Padula]| Desarrollador |
 
