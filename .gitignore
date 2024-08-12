@@ -130,6 +130,7 @@ ENV/
 env.bak/
 venv.bak/
 mEvenv
+mundoe
 
 
 # Spyder project settings
