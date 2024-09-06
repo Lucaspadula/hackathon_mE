@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapas Interactivos - Repartidores</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .map-iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 16px;
+        }
+
+        .tabs {
+            background-color: #f5f5f5;
+        }
+
+        .tabs .tab a {
+            color: #161616 !important;
+        }
+
+        .tabs .tab a:hover {
+            background-color: #e3f2fd;
+            color: #1e88e5;
+        }
+
+        .tabs .tab a.active {
+            background-color: #42a5f5;
+            font-weight: 600;
+        }
+
+        .tabs .indicator {
+            background-color: #1e88e5;
+        }
+
+        .descripcion {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="tabs">
+            <li class="tab col s3"><a class="active" href="#map">Mapa Entregas</a></li>
+            <li class="tab col s3"><a href="#map1"> Mes 2</a></li>
+            <li class="tab col s3"><a href="#map2"> Mes 3</a></li>
+            <li class="tab col s3"><a href="#map3"> Mes 4</a></li>
+            <li class="tab col s3"><a href="#map4"> Mes 5</a></li>
+            <li class="tab col s3"><a href="#map5"> Mes 6</a></li>
+            <li class="tab col s3"><a href="#map6"> Mes 7</a></li>
+            <li class="tab col s3"><a href="#map7"> Mes 8</a></li>
+            <li class="tab col s3"><a href="#map8"> Mes 9</a></li>
+            <li class="tab col s3"><a href="#map9"> Mes 10</a></li>
+            <li class="tab col s3"><a href="#map10">Mes 11</a></li>
+            <li class="tab col s3"><a href="#map11">Mes 12</a></li>
+        </ul>
+
+        <div id="map" class="col s12">
+            <h3 class="m-3">Mapa de Entregas</h3>
+            <span class="center-align descripcion m-1">
+                Este es el mapa de entregas de los repartidores del ano 2022.
+                Cada punto representa una entrega y contiene la informacion del repartidor y el cliente.
+            </span>
+            <iframe class="map-iframe" src="mapa_entregas.html"></iframe>
+        </div>
+        <div id="map1" class="col s12">
+            <h3 class="">Mapa de calor de lugares mas visitados en febrero.</h3>
+            <iframe class="map-iframe" src="mapa_calor_2022-02.html"></iframe>
+        </div>
+        <div id="map2" class="col s12">
+            <h3 class="">Mapa de calor de lugares mas visitados en marzo.</h3>
+            <iframe class="map-iframe" src="mapa_calor_2022-03.html"></iframe>
+        </div>
+        <div id="map3" class="col s12">
+            <h3 class="">Mapa de calor de lugares mas visitados en abril.</h3>
+            <iframe class="map-iframe" src="mapa_calor_2022-04.html"></iframe>
+        </div>
+        <div id="map4" class="col s12">
+            <h3 class="">Mapa de calor de lugares mas visitados en mayo.</h3>
+            <iframe class="map-iframe" src="mapa_calor_2022-05.html"></iframe>
+        </div>
+        <div id="map5" class="col s12">
+            <h3 class="">Mapa de calor de lugares mas visitados en junio.</h3>
+            <iframe class="map-iframe" src="mapa_calor_2022-06.html"></iframe>
+        </div>
+        <div id="map6" class="col s12">
+            <h3 class="">Mapa de calor de lugares mas visitados en julio.</h3>
+            <iframe class="map-iframe" src="mapa_calor_2022-07.html"></iframe>
+        </div>
+        <div id="map7" class="col s12">
+            <h3 class="">Mapa de calor de lugares mas visitados en agosto.</h3>
+            <iframe class="map-iframe" src="mapa_calor_2022-08.html"></iframe>
+        </div>
+        <div id="map8" class="col s12">
+            <h3 class="">Mapa de calor de lugares mas visitados en septiembre.</h3>
+            <iframe class="map-iframe" src="mapa_calor_2022-09.html"></iframe>
+        </div>
+        <div id="map9" class="col s12">
+            <h3 class="">Mapa de calor de lugares mas visitados en octubre.</h3>
+            <iframe class="map-iframe" src="mapa_calor_2022-10.html"></iframe>
+        </div>
+        <div id="map10" class="col s12">
+            <h3 class="">Mapa de calor de lugares mas visitados en noviembre.</h3>
+            <iframe class="map-iframe" src="mapa_calor_2022-11.html"></iframe>
+        </div>
+        <div id="map11" class="col s12">
+            <h3 class="">Mapa de calor de lugares mas visitados en diciembre.</h3>
+            <iframe class="map-iframe" src="mapa_calor_2022-12.html"></iframe>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.tabs');
+            var instances = M.Tabs.init(elems);
+        });
+    </script>
+</body>
+
+</html>
